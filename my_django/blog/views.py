@@ -38,7 +38,7 @@ def blog_post_retrieve_view(request):
     context = {'object_list': []}
 
     return render(request, template_name, context)
-
+#there is some error in this view as the update is not working properly
 @staff_member_required
 def blog_post_update_view(request,id_post):
     obj = get_object_or_404(BlogPost,id=id_post)
