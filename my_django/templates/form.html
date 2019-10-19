@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+{% if title %}
+    <h1>{{ title }} </h1>
+{% endif %}
+<form method="POST" action=".">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="Submit">Send</button>
+</form>
+
+{% endblock %}
