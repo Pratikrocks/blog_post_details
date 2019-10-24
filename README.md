@@ -7,5 +7,8 @@ clone it ino your repository
 then do
 
 cd blog_post_details
+
 cd my_django
+
+
 python3 manage.py runserver
