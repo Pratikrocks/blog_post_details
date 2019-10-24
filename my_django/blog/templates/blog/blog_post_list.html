@@ -2,7 +2,7 @@
 
 {% block title %}
     {% for object in object_list %}
-        <li>{{ object.id }}</li>
+        <li><a href="/blog/{{ object.id }}">{{ object.id }}</li>
         <li>{{ object.title }}</li>
         <p>{{ object.content }}</p>
     {% endfor %}
